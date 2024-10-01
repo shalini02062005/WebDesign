@@ -1,0 +1,45 @@
+<html>
+<head tittle=preparation of resume>
+</head>
+<body>
+<div align=center>
+<h1><b>
+SIMPLE RESUME FORMAT
+</b></h1>
+<hr>
+<p>
+3665 Margaret Street, Houston,TX 47587<br>
+(770)625-9669<br>
+RichardWilliams@gmail.com
+</P>
+<hr>
+<p><i>
+financial Advisor.......advisory service.
+</i></p>
+</div>
+<h2><b><tt>
+PROFESSIONAL EXPERIENCE
+</tt></b></h2>
+<hr>
+<p>
+<b>
+<span align=left>
+WELLS FARGO ADVISORS,
+</span>
+<span align=right>
+Houston, TX
+</span>
+</b>
+<br>
+<span align=left>
+Senior Financial Advisor
+</span>
+<span align=right>
+<i>
+August 2020-present
+</i>
+</span>
+</p>
+<p> Deliver financial....</p>
+</body>
+</html>
