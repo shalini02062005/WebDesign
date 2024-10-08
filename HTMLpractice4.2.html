@@ -1,37 +1,122 @@
 <html>
-<head></head>
+<head>
 
-<fieldset>
-<legend>Sign Up</legend>
+<style> 
+table {
+	border-collapse: collapse;
+	border: none;
+	
+	}
+th {
+	background-color: #d68910;
+	color: #b3b6b7;
+	}
+tr {
+	background-color: #873600;
+	color: #b3b6b7;
+	}
+th, td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+</style>
 
-First Name <input type ="text" placeholder ="Enter First Name">
-<br>
-Last Name <input type ="text" placeholder ="Enter Last Name">
-<br>
-Date of Birth <input type ="date">
-<br>
-Gender <input type ="radio" name= "gender">Male
-       <input type ="radio" name= "gender">Female
-<br>
-Country
+</head>
+
+
+<table>
+
+<tr>
+<th colspan ="2"> Sign Up </th>
+</tr>
+
+<tr>
+<td align ="right"> First Name </td>
+<td> <input type ="text" placeholder ="Enter First Name"> </td>
+</tr>
+
+<tr>
+<td align ="right"> Last Name </td>
+<td> <input type ="text" placeholder ="Enter Last Name">
+</td>
+</tr>
+
+<tr>
+<td align ="right"> Date of Birth </td>
+<td> 
+
+<select>
+<option>Date</option>
+<option>select</option>
+</select>
+
+<select>
+<option>Month</option>
+<option>select</option>
+</select>
+
+<select>
+<option>Year</option>
+<option>select</option>
+</select>
+
+</td>
+</tr>
+
+<tr>
+<td align ="right"> Gender </td>
+<td>  
+	 <input type ="radio" name= "gender">Male
+       	 <input type ="radio" name= "gender">Female
+</td>
+</tr>
+
+<tr>
+<td align ="right"> Country </td>
+<td>
 <select>
 <option>Country</option>
 <option>India</option>
 <option>Other</option>
 </select>
-<br>
-E-mail <input type ="text" placeholder ="Enter E-mail">
-<br>
-Phone <input type ="text" placeholder ="Enter phone">
-<br>
-Password <input type ="password">
-<br>
-Confirm Password <input type ="password">
-<br>
-<input type ="checkbox">I Agree to the Terms of Use
+</td>
+</tr>
 
-</fieldset>
+<tr>
+<td align ="right"> E-mail </td>
+<td> <input type ="text" placeholder ="Enter E-mail"> </td>
+</tr>
+
+<tr> 
+<td align ="right"> Phone </td> 
+<td> <input type ="text" placeholder ="Enter phone"> </td>
+</tr>
+
+<tr> 
+<td align ="right"> Password </td>
+<td> <input type ="password">
+</td>
+</tr>
+
+<tr>
+<td align ="right"> Confirm Password </td>
+<td> <input type ="password"> </td>
+</tr>
+
+<tr>
+<td colspan ="2" align ="right"> <input type ="checkbox">I Agree to the Terms of Use </td>
+</tr>
+
+
+<tr>
+<th align ="right" colspan ="2">
 <input type ="button" value ="Submit">
 <input type ="button" value ="Cancel">
+</th>
+</tr>
+
+</table>
 
 </html>
