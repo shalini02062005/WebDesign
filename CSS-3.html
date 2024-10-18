@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+nav {
+	width: auto;
+	height: 35px;
+	background-color: #0015e7;
+	}
+nav ul  {	
+	list-style-type: none;
+	margin: auto;
+	height: 20px;
+	}
+nav ul li {
+	float: left;
+	padding: 10px 20px;
+	color: white;
+	}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	background-color: #0015e7;
+	color: white;
+	padding: 5px 10px;
+	}
+.dropdown-content {
+	position: absolute;
+	display: none;
+	z-index: 0;
+		}
+.dropdown-content ul {
+	list-style-type: none;
+	}
+.dropdown-content ul li {
+	background-color: #384afb;
+	padding: 5px 10px;
+	}
+.dropdown:hover .dropdown-content {
+	display: block;	
+	}
+
+.img {
+	float :left;
+	display: block;
+	}
+.img-dropdown {
+	display: none;
+	position: relative;
+	}
+.img:hover .img-dropdown {
+	display: block;
+	position: absolute;
+	}
+</style>
+</head>
+
+<nav>
+<ul>
+<li> Home </li>
+<li> Content </li>
+
+<div class ="dropdown">
+<li> Contact Us </li>
+<div class ="dropdown-content">
+<ul>	<li> E-mail </li>
+	<li> Phone  </li>
+	<li> Chat   </li>	</ul>
+</div>
+</div>	
+</ul>
+</nav>
+
+<br>
+
+<article>
+<div class ="img">
+<img src ="panda.jpg" width ="150px" height ="200px">
+<div class ="img-dropdown">
+<img src ="panda.jpg" width ="250px" height ="300px">
+</div>
+</div>
+</article>
+
+</html>
