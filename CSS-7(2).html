@@ -1,0 +1,145 @@
+<html>
+<head>
+<style>
+.text-shadow {
+	font-size : 30;
+	text-shadow : 10px 5px 5px green;
+	}
+
+.box-shadow {
+	font-size : 30;
+	box-shadow : 10px 15px 7px 4px inset blue;
+	color : red;
+	height : 100px;
+	text-align : center;
+	padding : 20px;
+	}
+
+.clip {
+	width : 400px;
+	height : 50px;
+	border : 5px solid darkblue;
+	padding : 4px;
+	margin : 15px;
+	overflow : hidden;
+	text-overflow : clip;
+	}
+
+.ellipsis {
+	width : 100px;
+	height : 50px;
+	border : 6px solid darkblue;
+	padding : 4px;
+	margin : 15px;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	}
+.clip :hover {
+	overflow : visible;
+	}
+.ellipsis :hover {
+	overflow : visible;
+	}
+
+span .horizontal {
+	writting-mode: horizontal-tb;
+	}
+span .vertical {
+	writting-mode: vertical-rl;
+	}
+
+.word-wrap {
+	word-wrap: break-word;
+	width: 100px;
+	height: 100px	
+	margin-left: 20px;
+	}
+.keep-all {
+	word-break: keep-all;
+	width: 100px;
+	height: 100px;
+	float: right;
+	}
+.break-all {
+	word-break: break-all;
+	width: 100px;
+	height: 100px;
+	}
+
+
+</style>
+</head>
+
+<body>
+
+<p class="text-shadow">
+This para is build with text-shadow
+</p>
+
+<p class="box-shadow">
+This para is build with box-shadow 
+</p>
+
+<p class="text effect">
+This para is build with text-effect
+
+<h5> text-overflow - clip </h5>
+<div class="clip"><p>
+This para is build with text overflow
+This para is build with text overflow
+This para is build with text overflow
+This para is build with text overflow
+This para is build with text overflow
+</p></div>
+
+<h5> text-overflow - ellipsis </h5>
+<div class="ellipsis"><p>
+This para is build with text overflow
+This para is build with text overflow
+This para is build with text overflow
+This para is build with text overflow
+This para is build with text overflow
+</p></div>
+
+
+<h5> writting-mode </h5>
+<div> <p>
+This para is build with 
+	<span class="horizontal">HORIZONTAL</span> 
+writting-mode
+</p> </div>
+
+<div> <p>
+This para is build with 
+	<span class="vertical">VERTICAL</span>
+writting-mode
+</p> </div>
+
+<h5> word-wrap </h5>
+<p class="word-wrap">
+This para is built with word-wrap
+This para is built with word-wrap
+This para is built with word-wrap
+This para is built with word-wrap
+</p>
+
+<h5> Word-break</h5>
+<p class="keep-all">
+This para is built with Word-break
+This para is built with Word-break
+This para is built with Word-break
+This para is built with Word-break
+This para is built with Word-break
+</p>
+
+<p class="break-all">
+This para is built with Word-break
+This para is built with Word-break
+This para is built with Word-break
+This para is built with Word-break
+This para is built with Word-break
+</p>
+
+
+</body>
+</html>

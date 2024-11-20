@@ -4,42 +4,67 @@
 
 body {
 	background-color :#fae5d3;
+	width: auto;
 	}
 
 nav {
 	background-color :#873600;
 	width: auto;
 	}
+
+
+
 aside {
-	width:100%;
+	width: auto;
+	background-color :#d7955a;
+	padding: 5px;
+	height: inherit;
 	}
+input {
+	border-radius: 5px;
+	border: 0.5px solid black;
+	}
+
 
 
 .section {
-	align :center;
-	width:100%;
-	background-color :#ffffff
+	width: 100%;
+	background-color :#ffffff;
+	height: 128px;
 	}
-article  {
-	border :groove;
-	background-color :#ffffff
+section {
+	padding : 0px 5px 5px 2px;
+	border :0.2px solid #ffffff;
+	margin :0px 10px 5px 10px;
+	background-color :white;
+	float :center;
+	height : 42px;
+	width: auto;
+	box-shadow: 1px 2px 10px #b3b6b7;
+	}
+section p {
+	margin: 0px;
+	padding-left: 5px;
+	}
+article {
+	width: auto;
+	height: 110px;
+	background-color :white;
+	}
+article h4 {
+	margin: 0px;
+	padding-bottom: 1px;
+	padding-left: 2px;
 	}
 
-.left .right{
-	padding :15px;
-	border-spacing :20px;
-	background-color :#d7955a;
+.content {
+	display: flex;
+	height: 120px;
 	}
 
 footer {
 	background-color :#d98880;
 	}
-
-#coloumn {
-	coloumn-count : 3;
-	coloumn-gap: 5px;
-	}
-
 </style>
 </head>
 
@@ -62,16 +87,13 @@ footer {
 <td> <span style = "color:white"> Home4 	</span> </td>
 <td></td>	<td></td>
 <td> <span style = "color:white"> Home5  	</span> </td>
-<td></td>	<td></td>
-<td> <span style = "color:white"> Home6  	</span> </td>
 </tr>
 </table>
 </nav>
 
-<div id ="coloumn">
+<div class="content">
 
-<div class ="left">
-<aside style ="width:10%; float:left;">
+<aside style ="float:left;">
 <table class ="left">
 <tr><td>
 <input type ="button" value ="Home1">
@@ -90,28 +112,18 @@ footer {
 </td></tr>
 </table>
 </aside>
-</div>
 
-
-<div>
-<section style = "width:80%; float:left;">
-<table class = "section">
-<tr><td>
-<article> Section Heading </article> 
-</td></tr>
-<tr><td>
-<article> HTML 	<br>	Hyper Text Markup Language </article>
-</td></tr>
-<tr><td>
-<article> CSS	<br>	Cascading Style Sheet </article>
-</td></tr>
-</table>
+<article  class="section" style = "float:left;">
+<h4> Section Heading </h4>
+<section>
+<p> <b> HTML </b> <br> Hypertext markup language </p>
 </section>
-</div>
+<section>
+<p> <b> CSS </b> <br> Cascading Style Sheet </p>
+</section>
+</article>
 
-
-<div class ="right">
-<aside style ="width:10%; float:right;">
+<aside style ="float:left;">
 <table class ="right">
 <tr><td>
 <input type ="button" value ="Home1">
@@ -130,14 +142,14 @@ footer {
 </td></tr>
 </table>
 </aside>
-</div>
 
 </div>
 
 
 <div style ="clear:both; width:100%;">
-<footer> <p align ="center" style= "font-size:12"> @copyright 2016 All rights Reserved </p> </footer>
-</div>
+<footer>
+<p align ="center" style= "font-size:12"> @copyright 2016 All rights Reserved </p> </footer>
+
 
 </body>
 </html>

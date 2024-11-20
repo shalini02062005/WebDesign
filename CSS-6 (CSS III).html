@@ -1,0 +1,90 @@
+<html>
+<head><tittle> Properties of CSS 3 </tittle>
+<style>
+tittle {
+	font-size: 30;
+	color: purple;
+	text-align: center;
+	}
+.B-radius {
+	border-radius: 20px 40px 20px;
+	border : 5px solid red;
+	padding: 15px;
+	text-align : center;
+	}
+.B-img {
+	border-radius: 20px 40px 20px;
+	border : 5px solid red;
+	padding: 50px;
+	border-img: url(https://sharkcoder.com/files/article/css-border-image-original.png);
+	border-position: contain;
+	}
+.Linear-gradient {
+	height : 400px;
+	background-image: linear-gradient(to bottom right, magenta, yellow, blue);
+	}
+.Radial-gradient {
+	height : 400px;
+	padding: 50px;
+	background-image: radial-gradient( magenta, yellow 20%, blue);	
+
+.Conic-gradient {
+	height : 400px;
+	  width: 400px;
+	background-image: conic-gradient(at 75% 20%, magenta, yellow, blue);
+	border-radius : 30px;
+	}
+.gradient {
+	border-radius: 20px 40px 20px;
+	border : 5px solid transparent;
+	padding: 50px;
+	background-img: conic-gradient (at 75% 20%,  pink, yellow, blue );
+	}
+</style>
+</head>
+
+<body>
+<h1> Border-radius </h1>
+<div class= B-radius>
+<p>	This para is built with Border-radius
+	This para is built with Border-radius 
+	This para is built with Border-radius 
+	This para is built with Border-radius
+	This para is built with Border-radius
+	This para is built with Border-radius
+	This para is built with Border-radius 
+	This para is built with Border-radius 
+	This para is built with Border-radius
+	This para is built with Border-radius </div>  </p>
+
+
+<h1> Border-img </h1>
+<div class= B-img>
+<p>	This para is built with Border-img
+	This para is built with Border-img
+	This para is built with Border-img
+	This para is built with Border-img 
+	This para is built with Border-img
+	This para is built with Border-img
+	This para is built with Border-img
+	This para is built with Border-img </div> </p>
+
+
+
+<h1> Gradient</h1>
+<p> This para is built with Gradient
+<div class= "Gradient">
+<ul>
+<li> <div class ="Linear-gradient"> Linear-gradient </div> </li>
+<br>
+<li> <div class ="Radial-gradient"> Radial-gradient </div> </li>
+<br>
+<li> <div class ="Conic-gradient">  Conic-gradient  </div> </li>
+</ul>	</div>	</p>
+
+<p>
+<div class="gradient">
+</div>
+</p>
+</body>
+</html>

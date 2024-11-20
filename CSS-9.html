@@ -1,0 +1,53 @@
+<html>
+<head><tittle> Properties of CSS 3 </tittle>
+<style>
+tittle {
+	font-size: 30;
+	color: purple;
+	text-align: center;
+	}
+.D:hover {
+	transform:  rotate(20deg);
+	}
+.D {
+	width: 100px;
+	height: 150px;
+	background-color: pink;
+	border: 2px solid black;
+	}
+.D3 {
+	width: 100px;
+	height: 150px;
+	background-color: pink;
+	border: 2px solid black;
+	}
+.D3:hover {
+	transform: rotateY(270deg);
+	transtion-duration:10s;
+	}
+.Transition {
+	width: 80px;
+	height: 70px;
+	background-color: pink;
+	transtion: width 2s;
+	transition-timing-function: ease-out;
+	transition-property: width;
+  	transition-duration: 2s;
+	}
+div:hover {
+	width: 150px;
+	}
+</style>
+</head>
+<body>
+
+<h4> 2D Transform </h4>
+<p class= D> This para is built with 2D Transform </p>
+
+<h4> 3D Transform </h4>
+<p class= D3> This para is built with 3D Transform </p>
+
+<div>
+<h4> Transition </h4>
+<p class= Transition> This para is built with Transition </p>
+</div>
