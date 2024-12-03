@@ -1,0 +1,387 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+<link rel="icon" type="image/icon" href="Homeimage.ico">
+
+<tittle> </tittle>
+<style>
+
+
+
+body {
+	font-family: Helvetica;
+	}
+header {
+	color: #fae5d3;
+	text-align: center;
+	text-shadow: 2px 4px 5px white;
+	padding-left: 10px;
+	width: auto;
+	height: 50px;
+	font-size: 35px;
+	background-image: linear-gradient(#1d80a0, #113744);
+	}
+
+nav {
+	width: 100%;
+	background-color: #fae5d3;
+	}
+nav ul {
+	margin: 0;
+ 	padding: 0;
+	display: flex;
+  	justify-content:space-around;
+	}
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+ 	padding: 10px;
+	}
+nav table {
+	align: center;
+	}
+
+
+#a {
+	text-decoration: none;
+	color: black;
+	}
+#a:hover {
+	color: #1d80a0;
+	}
+
+.dropdown {
+	position: relative;	
+ 	display: inline-block;
+	z-index: 1;
+	}
+.dropdown-content {
+	position: absolute;
+	display: none;
+  	z-index: 0;
+	overflow: auto;
+	}
+.dropdown:hover .dropdown-content {
+	display: block;
+	}
+.dropdown:hover {
+	color: #1d80a0;
+		}
+.dropdown-content a {
+  	color: black;
+ 	padding: 5px 10px;
+  	text-decoration: none;
+	display: block;
+	background-color: #fae5d3;
+	border: 1px solid #113744;
+	border-radius: 8px;
+	}
+.dropdown-content a:hover {
+	color: #1d80a0;
+	}
+
+
+.icon {	
+	border-radius: 62%;
+	width: 38px;
+	height: 35px;
+	padding-top: 7px;
+	padding: 10px;
+	}
+header .icon:hover {
+	transform: scale(1.2,1.2);
+	box-shadow: 0 4px 8px 0 #000000;
+	}
+
+
+
+.home {
+	position: relative;
+	width: 100%;
+	height : 100%;
+	background-image: url(backgroundimages3.jpg);
+	background-size: cover;
+	overflow: hidden;
+	
+	}
+.home img {
+	width: 100%;
+	opacity: 0.6;
+	}
+.topleft {
+	position: absolute;
+	top: 28px;
+	left: 18%;
+	right: 24%;
+	font-size: 16px;
+	}
+
+
+
+.bigcontainer {
+	display: flex;
+	}
+.container {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	}
+.image {
+	opacity: 1;
+	display: block;
+	transition:.5 ease;
+	backface-visibility: hidden;
+	}
+.middle {
+	transition: .5 ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 30%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	}
+.container:hover .image {
+	opacity: 0.3;
+	}
+.container:hover .middle {
+	opacity: 1;
+	}
+.text {
+	background-color: #1d80a0;
+	color: #fae5d3;
+	font-size: 16px;
+	padding: 4px 7px;
+	text-align: center;
+	}
+.text a {
+	text-decoration: none;
+	color: black;
+	}
+.text a:hover {
+	color: #fae5d3;
+	}
+	
+	
+
+
+.quote1 {
+	padding: 10px;		
+	height: 20px;
+	width: auto;
+	font-size: 25;
+	text-align: center;
+	font-family: lucida Handwriting;
+	}
+.qdesign {
+	width: 70px;
+	margin: auto;
+	padding: 5px;
+	background-color: #1d80a0;
+	}
+
+
+section ul li {
+	list-style-type: none;
+	line-spacing: 5px;
+	}
+
+
+.footer-basic {
+  padding:40px 0;
+  background-image: linear-gradient(#1d80a0, #113744);
+  color: #fae5d3;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+.list-inline {
+	display: flex;
+	justify-content: center;
+	}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+My Portfolio
+<a href="MyHome.html" style="float:right">	
+<img class="icon" src="Homeimage.jpg">	</a> 
+</header>
+
+<nav>
+<ul style="list-style-type:none">
+
+<li>	<a id="a" href="MyHome.html"> 	HOME	</a> </li> 		
+<li>	<a id="a"  href="#About">	ABOUT	</a> </li>	
+<li>	<a id="a"  href="MyWork.html">	MY WORK	</a> </li> 			
+<li>	<a id="a"  href="Mygallery.html">	MY GALLERY	</a> </li>	
+<li>	
+<a id="a" > <div class="dropdown"> 
+	REACH ME	</a> 
+	<div class="dropdown-content">
+<a id="a"  href="tel:6382282804"> Phone </a>
+<a id="a"  href="mailto:kshalini6382@gmail.com"> E-Mail </a>
+<a id="a"  href="sms:+6382282804"> Message </a>
+	</div>
+</div> 
+</li>
+
+</ul>
+</nav>
+
+<br>
+
+<div class="home">
+<div class="topleft">
+
+<p> <span style="font-family:Monaco;font-size:30"> Hi! <br> I am Shalini.K </span> 
+<br>
+
+<i> hello everyone! I am a passionate student with love for designing. Through my works , I would like to grab your attention. Know me more..... </i>
+</p>
+
+<p> <span style="font-family:Monaco;font-size:25;"> Acadamics </span>
+<br>
+I have recently trained in web designing using HTML and CSS. 
+I am an amature photographer too.
+I completed my schooling in Alagar Public School, Thoothukudi. Where I have participated in many programs. Now, I am doing my undergraduate studies in Microbiology at St Mary's College, Thoothukudi. I have served as the Secratary of Red Ribbon Club of our College during the academic year 2023-2024.	</p>
+
+
+<p> <span style="font-family:Monaco;font-size:25;"> Sports </span>
+<br>
+I also excell in Skating. Did my training for 2 years, and have won in district level competitions.	</p>
+
+ 
+<p> <span style="font-family:Monaco;font-size:25;"> Extra-curricular activities </span>
+<br>
+I am creative too, I have participated in Jewellary making competition and have won at the College level. I am active quizzer, I have won district level 1st prize in quiz conducted by TANSACS in the year 2022. I have also won the 1st prize in Inter-college quiz conducted by Kamarajar Government Arts and Science College, Surandai, Tenkasi. </p> 
+
+</div>
+
+</div>
+
+
+<section id="About">
+
+<p class="quote1"> <q>  We're all about progress, not perfection. </q> </p>
+<div class="qdesign"> </div>
+
+
+<p style="font-size:30"> What I have done </p>
+
+<div class="bigcontainer">
+<div class="container">
+<img src="Webdesign2.jpg" class="image"style="width:100%">
+	<div class="middle">
+		<div class="text"> <a href="MyWork.html" target="-blank"> Web Designing </a> </div>
+	</div>
+</div>
+
+
+<br>
+
+
+<div class="container">
+<img src="photography2.jpg" class="image"style="width:100%">
+	<div class="middle">
+		<div class="text"> <a href="MyGallery.html" target="-blank">	Photography </a> </div>
+	</div>
+</div>
+</div>
+ 
+
+</section>
+
+<br>
+
+<body>
+    <div class="footer-basic">
+        <footer>
+<div class="social">
+	<a href="https://github.com/shalini02062005"><i class="icon ion-social-github-outline"></i></a>
+	<a href="mailto:kshalini6382@gmail.com"><i class="icon ion-email"></i></a>
+	<a href="sms:+6382282804"><i class="icon ion-chatbox"></i></a>
+	<a href="tel:6382282804"><i class="icon ion-ios-telephone"></i></a>
+</div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="MyHome.html">Home</a></li>
+                <li class="list-inline-item"><a href="#About">About</a></li>
+                <li class="list-inline-item"><a href="MyWork.html">My Works</a></li>
+                <li class="list-inline-item"><a href="Mygallery.html">My Gallery</a></li>
+            </ul>
+            <p class="copyright">Shalini Kanthasamy</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</body>
+</html>
